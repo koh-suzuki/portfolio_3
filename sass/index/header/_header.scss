@@ -1,0 +1,115 @@
+.header__wrapper {
+  width: 100vw;
+  position: fixed;
+  z-index: 3;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1324px;
+  margin: 0 auto;
+}
+.header__logo {
+  width: 260px;
+  height: auto;
+  img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+.header__nav {
+  display: none;
+}
+.menu__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* ハンバーガーメニュー
+--------------------------- */
+.menu {
+  // display: none;
+  width: 1.375rem;
+  height: 0.625rem;
+  position: relative;
+  z-index: 3;
+  border:none;
+  margin-right: 7px; 
+}
+.bar{
+  width: 100%;
+  height: 2px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+.bar__top{
+  top: 0px;
+}
+.bar__mid{
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.bar__bottom{
+  bottom: 0px;
+}
+.menu__text {
+  font-size: 0.625rem;
+  color: #fff;
+}
+/* ハンバーガーメニューの閉じる挙動
+------------------------------------------- */ 
+.menu.close .bar__top{
+  transform: translate(-50%,10px) rotate(45deg);
+  transition: transform .3s;
+}
+.menu.close .bar__mid{
+  opacity: 0;
+  transition: opacity .3s;
+}
+.menu.close .bar__bottom{
+  transform: translate(-50%,-13px) rotate(-45deg);
+  transition: transform .3s;
+}
+/* ------------------------------
+SP画面
+------------------------------- */ 
+// @include mq-down(breakpoint: md) {
+//   .header__nav {
+//     display: none;
+//   }
+//   .menu {
+//     display: block;
+//   }
+//   /* ハンバーガーメニューの全画面表示
+//   ------------------------------------------- */
+//   .header__nav{
+//     width: 100vw;
+//     height: 100vh;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     z-index: 3;
+//   }
+//   .header__list{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     width: 100%;
+//     height: 100%;
+//     background-color:#1B1310;
+//     z-index: 3;
+//   }
+//   .header__nav.header__list{
+//     display: block;
+//     transform: translate(-50%,-50%);
+//   }
+//   .header__item{
+//     margin-bottom: 40px;
+//   }
+//   body.noscroll{
+//     overflow: hidden;
+//   }

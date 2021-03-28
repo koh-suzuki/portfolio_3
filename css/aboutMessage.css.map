@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/about/main/aboutMessage.scss"
+    ],
+    "names": [],
+    "file": "aboutMessage.css"
+}

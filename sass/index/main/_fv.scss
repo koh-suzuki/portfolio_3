@@ -1,0 +1,46 @@
+.fv__wrapper {
+  position: relative;
+  z-index: 1;
+}
+.fv__main__img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  img {
+    max-width: 100%;
+  }
+}
+.fv__sub__img {
+  width: 54.2%;
+  height: 740px;
+  margin-left: auto;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+}
+.fv__catch {
+  position: absolute;
+  top: 22%;
+  right: 13.5%;
+  color: #FFFFFF;
+}
+
+/* font
+------------------------ */ 
+.fv__text__1 {
+  font-family: 游ゴシック体;
+}
+.fv__text__2 {
+  font-family: Montserrat;
+}
+.fv__text__1,
+.fv__text__2 {
+  @include f_around(20, 17, bold, 0);
+}
+.fv__catch__title {
+  @include f_around(72, 86, Bold, 0);
+  font-family: 'Montserrat', sans-serif;
+}
