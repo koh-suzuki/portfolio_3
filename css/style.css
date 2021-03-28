@@ -622,4 +622,382 @@ SP画面
   letter-spacing: 0.015em;
   color: #FFFFFF;
 }
+
+.header__wrapper {
+  position: fixed;
+  z-index: 3;
+  width: 100vw;
+  padding: 30px 0;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1324px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  width: 260px;
+  height: auto;
+}
+
+.header__logo img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.fv__text__1 {
+  margin-bottom: 8px;
+}
+
+.fv__text__2 {
+  margin-bottom: 10px;
+}
+
+.header__nav {
+  display: none;
+}
+
+.menu__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* ハンバーガーメニュー
+--------------------------- */
+.menu {
+  width: 1.375rem;
+  height: 0.625rem;
+  position: relative;
+  z-index: 3;
+  border: none;
+  margin-right: 7px;
+}
+
+.bar {
+  width: 100%;
+  height: 2px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+
+.bar__top {
+  top: 0px;
+}
+
+.bar__mid {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bar__bottom {
+  bottom: 0px;
+}
+
+.menu__text {
+  font-size: 0.625rem;
+  color: #fff;
+}
+
+/* ハンバーガーメニューの閉じる挙動
+------------------------------------------- */
+.menu.close .bar__top {
+  transform: translate(-50%, 10px) rotate(45deg);
+  transition: transform .3s;
+}
+
+.menu.close .bar__mid {
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.menu.close .bar__bottom {
+  transform: translate(-50%, -13px) rotate(-45deg);
+  transition: transform .3s;
+}
+
+/* ------------------------------
+SP画面
+------------------------------- */
+.fv__wrapper {
+  position: relative;
+  z-index: 1;
+  height: 740px;
+}
+
+.fv__main__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+}
+
+.fv__main__img img {
+  max-width: 100%;
+}
+
+.fv__sub__img {
+  width: 54.2%;
+  height: 740px;
+  margin-left: auto;
+}
+
+.fv__sub__img img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fv__catch {
+  position: absolute;
+  top: 22%;
+  right: 13.5%;
+  color: #FFFFFF;
+}
+
+/* font
+------------------------ */
+.fv__text__1 {
+  font-family: 游ゴシック体;
+}
+
+.fv__text__2 {
+  font-family: Montserrat;
+}
+
+.fv__text__1,
+.fv__text__2 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 0.85;
+  letter-spacing: 0em;
+}
+
+.fv__catch__title {
+  font-size: 72px;
+  font-weight: Bold;
+  line-height: 1.19444;
+  letter-spacing: 0em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about__wrapper {
+  height: 627px;
+}
+
+.about__main__view {
+  position: relative;
+  /* section__wrapper 起点 */
+  position: absolute;
+  top: 120px;
+  z-index: 1;
+}
+
+.about__inner {
+  /* .about__main__viewのrelative 起点 */
+  position: absolute;
+  top: 110px;
+  left: 50px;
+  z-index: 1;
+  max-width: 590px;
+  height: 387px;
+  background-color: #FFFFFF;
+  opacity: .95;
+}
+
+.about__title {
+  margin-left: 30px;
+}
+
+.btn__about {
+  margin-left: 30px;
+}
+
+.about__img {
+  max-width: 1100px;
+  height: auto;
+}
+
+.about__img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.about__text {
+  padding: 30px;
+}
+
+/* font
+------------------------- */
+.about__title {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 2.9375;
+  letter-spacing: 0.068em;
+}
+
+.about__text {
+  font-family: Noto Sans JP;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0em;
+}
+
+.content__title {
+  margin-bottom: 30px;
+}
+
+.content__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content__inner {
+  margin: 180px 0 60px;
+}
+
+.content__img {
+  width: 520px;
+  height: auto;
+}
+
+.content__img img {
+  max-width: 100%;
+}
+
+.content__text {
+  padding: 30px 0;
+}
+
+/* font
+------------------------- */
+.content__inner {
+  color: #333333;
+}
+
+.content__title {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.21875;
+  letter-spacing: 0.068em;
+}
+
+.content__text {
+  font-family: 游ゴシック体;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0em;
+}
+
+.topics__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0;
+}
+
+.topic__title {
+  margin-bottom: 16px;
+}
+
+.topic__list {
+  min-width: 700px;
+  margin-left: auto;
+}
+
+.topic__day {
+  padding-top: 16px;
+}
+
+.topic__text {
+  padding: 12px 0 12px;
+  margin-bottom: 16px;
+  border-bottom: #DDDDDD 1px solid;
+}
+
+.btn__topic {
+  padding-top: 14px;
+  margin-left: auto;
+}
+
+/* font
+------------------------ */
+.topic__day {
+  font-family: Montserrat Medium;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.015em;
+  color: #CECECE;
+}
+
+.topic__text {
+  font-family: 游ゴシック体;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.004em;
+  color: #333333;
+}
+
+.contact__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 0 120px;
+}
+
+.contact__lead {
+  max-width: 440px;
+}
+
+.contact__img {
+  width: 580px;
+  height: auto;
+}
+
+.contact__img img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.btn__contact {
+  margin-top: 30px;
+}
+
+/* font
+----------------------- */
+.contact__text {
+  font-family: 游ゴシック体 Medium;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0em;
+}
+
+.footer {
+  background-color: #525252;
+  text-align: center;
+}
+
+.copyright {
+  padding: 21px 0 19px;
+}
+
+/* font
+----------------- */
+.copyright {
+  font-family: Montserrat Medium;
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 0.015em;
+  color: #FFFFFF;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,5 @@
 @import 'base';
+/* Home Page */ 
 @import 'index/header/header';
 @import 'index/main/fv';
 @import 'index/main/about';
@@ -6,3 +7,15 @@
 @import 'index/main/topics';
 @import 'index/main/contact';
 @import 'index/footer/footer';
+/* About Page */ 
+@import 'about/header/aboutHeader';
+@import 'about/main/aboutFv';
+@import 'about/main/aboutVision';
+@import 'about/main/aboutMessage';
+@import 'about/main/aboutCompany';
+@import 'about/footer/aboutFooter';
+/* Contact Page */ 
+@import 'contact/main/contactHeader';
+@import 'contact/main/contactFv';
+@import 'contact/main/contactForm';
+@import 'contact/footer/contactfooter';
