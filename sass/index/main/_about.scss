@@ -47,10 +47,3 @@
   font-family: Noto Sans JP;
   @include f_around(16, 32, false, 0);
 }
-.btn__img {
-  width: 160px;
-  height: auto;
-  img {
-    max-width: 100%;
-  }
-}

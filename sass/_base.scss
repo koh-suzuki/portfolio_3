@@ -36,3 +36,10 @@ vertical-align: top;
 .section__wrapper {
   position: relative;
 }
+.btn__img {
+  width: 160px;
+  height: auto;
+  img {
+    max-width: 100%;
+  }
+}

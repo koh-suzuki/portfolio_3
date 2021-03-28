@@ -232,6 +232,15 @@ img {
   position: relative;
 }
 
+.btn__img {
+  width: 160px;
+  height: auto;
+}
+
+.btn__img img {
+  max-width: 100%;
+}
+
 .header__wrapper {
   position: fixed;
   z-index: 3;
@@ -449,12 +458,56 @@ SP画面
   letter-spacing: 0em;
 }
 
-.btn__img {
-  width: 160px;
+.contents__wrapper {
+  background-color: #F0F0F0;
+}
+
+.content__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content__inner {
+  margin: 180px 0 60px;
+}
+
+.content__title {
+  margin-bottom: 30px;
+}
+
+.content__img {
+  width: 520px;
   height: auto;
 }
 
-.btn__img img {
+.content__img img {
   max-width: 100%;
+}
+
+.content__text {
+  padding: 30px 0;
+}
+
+/* font
+------------------------- */
+.content__inner {
+  color: #333333;
+}
+
+.content__title {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.21875;
+  letter-spacing: 0.068em;
+}
+
+.content__text {
+  font-family: 游ゴシック体;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0em;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,41 @@
+.contents__wrapper {
+  // height: 771px;
+  background-color: #F0F0F0;
+}
+.content__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.content__inner {
+  margin: 180px 0 60px;
+}
+.content__title {
+  margin-bottom: 30px;
+}
+.content__img {
+  width: 520px;
+  height: auto;
+  img {
+    max-width: 100%;
+  }
+}
+.content__text {
+  padding: 30px 0;
+}
+
+/* font
+------------------------- */
+.content__inner {
+  color: #333333;
+}
+.content__title {
+  font-family: Montserrat;
+  @include f_around(32, 39, bold, 68);
+}
+.content__text {
+  font-family: 游ゴシック体;
+  @include f_around(16, 16, false, 0);
+
+}
