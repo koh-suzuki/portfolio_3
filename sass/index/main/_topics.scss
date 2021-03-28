@@ -1,0 +1,37 @@
+.topics__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0;
+}
+.topic__title { 
+  margin-bottom: 16px;
+}
+.topic__list {
+  min-width: 700px;
+  margin-left: auto;
+}
+.topic__day {
+  padding-top: 16px;
+}
+.topic__text {
+  padding: 12px 0 12px;
+  margin-bottom: 16px;
+  border-bottom: #DDDDDD 1px solid;
+}
+.btn__topic {
+  padding-top: 14px;
+  margin-left: auto;
+}
+
+/* font
+------------------------ */ 
+.topic__day {
+  font-family: Montserrat Medium;
+  @include f_around(10, 10, bold, 15);
+  color: #CECECE;
+}
+.topic__text {
+  font-family: 游ゴシック体;
+  @include f_around(14, 14, bold, 4);
+  color: #333333;
+}

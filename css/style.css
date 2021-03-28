@@ -241,6 +241,10 @@ img {
   max-width: 100%;
 }
 
+.content__title {
+  margin-bottom: 30px;
+}
+
 .header__wrapper {
   position: fixed;
   z-index: 3;
@@ -413,7 +417,7 @@ SP画面
   top: 110px;
   left: 50px;
   z-index: 1;
-  width: 590px;
+  max-width: 590px;
   height: 387px;
   background-color: #FFFFFF;
   opacity: .95;
@@ -473,10 +477,6 @@ SP画面
   margin: 180px 0 60px;
 }
 
-.content__title {
-  margin-bottom: 30px;
-}
-
 .content__img {
   width: 520px;
   height: auto;
@@ -509,5 +509,55 @@ SP画面
   font-size: 16px;
   line-height: 1;
   letter-spacing: 0em;
+}
+
+.topics__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0;
+}
+
+.topic__title {
+  margin-bottom: 16px;
+}
+
+.topic__list {
+  min-width: 700px;
+  margin-left: auto;
+}
+
+.topic__day {
+  padding-top: 16px;
+}
+
+.topic__text {
+  padding: 12px 0 12px;
+  margin-bottom: 16px;
+  border-bottom: #DDDDDD 1px solid;
+}
+
+.btn__topic {
+  padding-top: 14px;
+  margin-left: auto;
+}
+
+/* font
+------------------------ */
+.topic__day {
+  font-family: Montserrat Medium;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.015em;
+  color: #CECECE;
+}
+
+.topic__text {
+  font-family: 游ゴシック体;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.004em;
+  color: #333333;
 }
 /*# sourceMappingURL=style.css.map */
