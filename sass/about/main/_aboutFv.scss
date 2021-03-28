@@ -1,0 +1,24 @@
+.ab__fv__sub {
+  width: 55.72%;
+  height: 110.75vh;
+  margin-left: auto;
+  img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.ab__fv__text {
+  margin-top: 5px;
+}
+
+/* font
+----------------------------- */ 
+.ab__fv__catch__title {
+  font-family: 'Montserrat', sans-serif;
+  @include f_around(72, 86, Bold, 63);
+}
+.ab__fv__text {
+  font-family: Noto Sans JP Bold;
+  @include f_around(20, 20, false, 5);
+}
