@@ -1,0 +1,15 @@
+.footer {
+  background-color: #525252;
+  text-align: center;
+}
+.copyright {
+  padding: 21px 0 19px;
+}
+
+/* font
+----------------- */ 
+.copyright {
+  font-family: Montserrat Medium;
+  @include f_around(10, 10, false, 15);
+  color: #FFFFFF;
+}

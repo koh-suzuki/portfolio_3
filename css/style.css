@@ -586,4 +586,32 @@ SP画面
 .btn__contact {
   margin-top: 30px;
 }
+
+/* font
+----------------------- */
+.contact__text {
+  font-family: 游ゴシック体 Medium;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0em;
+}
+
+.footer {
+  background-color: #525252;
+  text-align: center;
+}
+
+.copyright {
+  padding: 21px 0 19px;
+}
+
+/* font
+----------------- */
+.copyright {
+  font-family: Montserrat Medium;
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 0.015em;
+  color: #FFFFFF;
+}
 /*# sourceMappingURL=style.css.map */
