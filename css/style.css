@@ -241,8 +241,8 @@ img {
   max-width: 100%;
 }
 
-.content__title {
-  margin-bottom: 30px;
+.color__wrapper {
+  background-color: #F0F0F0;
 }
 
 .header__wrapper {
@@ -462,8 +462,8 @@ SP画面
   letter-spacing: 0em;
 }
 
-.contents__wrapper {
-  background-color: #F0F0F0;
+.content__title {
+  margin-bottom: 30px;
 }
 
 .content__wrapper {
@@ -559,5 +559,31 @@ SP画面
   line-height: 1;
   letter-spacing: 0.004em;
   color: #333333;
+}
+
+.contact__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 0 120px;
+}
+
+.contact__lead {
+  max-width: 440px;
+}
+
+.contact__img {
+  width: 580px;
+  height: auto;
+}
+
+.contact__img img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.btn__contact {
+  margin-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */
