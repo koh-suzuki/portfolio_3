@@ -14,6 +14,23 @@
   margin-top: 5px;
 }
 
+// レスポンシブ max-width: 768px;
+@include mq-down($breakpoint: md) {
+  .fv__main__img {
+
+  }
+  .ab__fv__sub {
+    width: 52.9%;
+    height: auto;
+    margin-left: auto;
+    img {
+      max-width: 100%;
+      height: 615px;
+      object-fit: cover;
+    }
+  }
+}
+
 
 /* font
 ----------------------------- */ 
@@ -26,5 +43,16 @@
   @include f_around(20, 20, false, 5);
 }
 
-
+// レスポンシブ max-width: 768px;
+@include mq-down($breakpoint: md) {
+  .ab__fv__catch__title {
+    font-family: 'Montserrat', sans-serif;
+    @include f_around(52, 86, Bold, 63);
+  }
+  .ab__fv__text {
+    font-family: Noto Sans JP Bold;
+    @include f_around(16, 16, false, 5);
+  }
+  
+}
 

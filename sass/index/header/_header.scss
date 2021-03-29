@@ -7,12 +7,14 @@
 .header__inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 1324px;
   margin: 0 auto;
 }
 .header__logo {
   width: 260px;
   height: auto;
+  display: flex;
   img {
     max-width: 100%;
     object-fit: cover;
@@ -120,3 +122,26 @@ SP画面
 //   body.noscroll{
 //     overflow: hidden;
 //   }
+
+/* font
+----------------------------------- */
+.menu__text {
+  font-family: Montserrat ExtraBold;
+  @include f_around(10, 10, false, 5);
+} 
+
+// レスポンシブ max-width: 768px;
+@include mq-down($breakpoint: md) {
+  .header__inner {
+    max-width: 708px;
+  }
+  .header__logo {
+    width: 189px;
+    height: auto;
+    display: flex;
+    img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+}

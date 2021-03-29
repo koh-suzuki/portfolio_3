@@ -1,0 +1,16 @@
+// レスポンシブ max-width: 768px;
+@include mq-down($breakpoint: md) {
+  .fv__main__img {
+    width: 578px;
+    height: auto;
+    img {
+      max-width: 100%;
+      height: 529px;
+      object-fit: cover;
+      object-position: 47%;
+    }
+  }
+  // .ab__fv__sub {
+    
+  // }
+}
