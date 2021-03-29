@@ -1,0 +1,48 @@
+.company__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 120px;
+}
+.company__main__title {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #DDDDDD;
+}
+.company__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 70%;
+  margin-left: 30%;
+}
+.company__title {
+  width: 30%;
+}
+.company__text {
+  width: 70%;
+}
+.company__text,
+.company__title {
+  border-bottom: 1px solid #DDDDDD;
+}
+.company__map {
+  margin-top: 40px;
+}
+
+/* font
+----------------------- */ 
+$company__text__color: #333333;
+.company__main__title {
+  font-family: Montserrat ExtraBold;
+  @include f_around(32, 94, false, 68);
+  color: $company__text__color;
+}
+.company__title {
+  font-family: 游ゴシック体;
+  @include f_around(16, 94, bold, 0);
+  color: $company__text__color;
+}
+.company__text {
+  font-family: 游ゴシック体;
+  @include f_around(16, 94, false, 0);
+  color: $company__text__color;
+}
