@@ -1,0 +1,30 @@
+.vision__wrapper {
+  max-width: 415px;
+  padding: 120px 0;
+  margin-left: 16.143vw;
+}
+.vision__title {
+  margin-bottom: 30px;
+}
+.vision__sub__title {
+  margin-bottom: 30px;
+}
+
+/* font
+----------------------------- */ 
+$vision__text__color: #333333;
+.vision__title {
+  font-family: Montserrat;
+  @include f_around(32, 32, bold, 68);
+  color: $vision__text__color;
+}
+.vision__sub__title {
+  font-family: 游ゴシック体;
+  @include f_around(24, 24, bold, 5);
+  color: $vision__text__color;
+}
+.vision__text {
+  font-family: Noto Sans JP Bold;
+  @include f_around(16, 32, false, 0);
+  color: $vision__text__color;
+}

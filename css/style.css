@@ -625,6 +625,10 @@ SP画面
 }
 
 /* About Page */
+.ab__fv__catch__title {
+  margin-top: 11.46vh;
+}
+
 .ab__fv__sub {
   width: 55.72%;
   height: 110.75vh;
@@ -656,6 +660,48 @@ SP画面
   font-size: 20px;
   line-height: 1;
   letter-spacing: 0.005em;
+}
+
+.vision__wrapper {
+  max-width: 415px;
+  padding: 120px 0;
+  margin-left: 16.143vw;
+}
+
+.vision__title {
+  margin-bottom: 30px;
+}
+
+.vision__sub__title {
+  margin-bottom: 30px;
+}
+
+/* font
+----------------------------- */
+.vision__title {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.068em;
+  color: #333333;
+}
+
+.vision__sub__title {
+  font-family: 游ゴシック体;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.005em;
+  color: #333333;
+}
+
+.vision__text {
+  font-family: Noto Sans JP Bold;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0em;
+  color: #333333;
 }
 
 /* Contact Page */
