@@ -631,7 +631,7 @@ SP画面
 
 .ab__fv__sub {
   width: 55.72%;
-  height: 110.75vh;
+  height: 58.74vh;
   margin-left: auto;
 }
 
@@ -796,5 +796,18 @@ SP画面
   line-height: 5.875;
   letter-spacing: 0em;
   color: #333333;
+}
+
+.contact__form__wrapper {
+  padding: 120px 0;
+}
+
+.contact__form__inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact__form__text {
+  margin-bottom: 55px;
 }
 /*# sourceMappingURL=style.css.map */
