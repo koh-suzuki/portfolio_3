@@ -1,0 +1,50 @@
+.message__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding: 144px 0 120px;
+}
+.ceo__wrapper {
+  width: 770px;
+  background-color: #F0F0F0;
+  padding: 120px 0 90px;
+}
+.ceo__inner {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.message__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 420px;
+  height: auto;
+  img {
+    max-width: 100%;
+  }
+}
+
+// レスポンシブ max-width: 768px;
+@include mq-down($breakpoint: md) {
+  .message__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: auto;
+    img {
+      max-width: 100%;
+    }
+  }
+  .ceo__wrapper {
+    max-width: 494px;
+    padding: 109px 0 78px;
+  }
+  .ceo__inner {
+    max-width: 415px;
+    margin: 0 auto;
+  }
+}
+
+

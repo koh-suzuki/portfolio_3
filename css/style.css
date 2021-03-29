@@ -245,6 +245,13 @@ img {
   background-color: #F0F0F0;
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 708px;
+    margin: 0 auto;
+  }
+}
+
 /* Home Page */
 .header__wrapper {
   position: fixed;
@@ -778,7 +785,7 @@ SP画面
 
 @media screen and (max-width: 768px) {
   .vision__wrapper {
-    margin-left: 19.54%;
+    margin-left: 16.95%;
   }
 }
 
@@ -833,14 +840,34 @@ SP画面
   top: 0;
   left: 0;
   width: 420px;
+  height: auto;
 }
 
 .message__img img {
   max-width: 100%;
 }
 
-/* font
--------------------- */
+@media screen and (max-width: 768px) {
+  .message__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: auto;
+  }
+  .message__img img {
+    max-width: 100%;
+  }
+  .ceo__wrapper {
+    max-width: 494px;
+    padding: 109px 0 78px;
+  }
+  .ceo__inner {
+    max-width: 415px;
+    margin: 0 auto;
+  }
+}
+
 .company__wrapper {
   display: flex;
   flex-direction: column;

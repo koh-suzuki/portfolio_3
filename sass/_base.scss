@@ -47,3 +47,10 @@ vertical-align: top;
   background-color: #F0F0F0;
 }
 
+// レスポンシブ max-width: 768px;
+@include mq-down($breakpoint: md) {
+  .container {
+    max-width: 708px;
+    margin: 0 auto;
+  }
+}
