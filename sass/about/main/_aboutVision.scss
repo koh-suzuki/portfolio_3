@@ -1,7 +1,7 @@
 .vision__wrapper {
   max-width: 415px;
   padding: 120px 0;
-  margin-left: 16.143vw;
+  margin-left: 20.55%;
 }
 .vision__title {
   margin-bottom: 30px;
@@ -9,6 +9,14 @@
 .vision__sub__title {
   margin-bottom: 30px;
 }
+
+// レスポンシブ max-width: 768px;
+@include mq-down($breakpoint: md) {
+  .vision__wrapper {
+    margin-left: 19.54%;    
+  }
+}
+
 
 /* font
 ----------------------------- */ 
@@ -25,6 +33,6 @@ $vision__text__color: #333333;
 }
 .vision__text {
   font-family: Noto Sans JP Bold;
-  @include f_around(16, 32, false, 0);
+  @include f_around(14, 28, false, 0);
   color: $vision__text__color;
 }

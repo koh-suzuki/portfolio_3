@@ -765,7 +765,7 @@ SP画面
 .vision__wrapper {
   max-width: 415px;
   padding: 120px 0;
-  margin-left: 16.143vw;
+  margin-left: 20.55%;
 }
 
 .vision__title {
@@ -774,6 +774,12 @@ SP画面
 
 .vision__sub__title {
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .vision__wrapper {
+    margin-left: 19.54%;
+  }
 }
 
 /* font
@@ -798,7 +804,7 @@ SP画面
 
 .vision__text {
   font-family: Noto Sans JP Bold;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 2;
   letter-spacing: 0em;
   color: #333333;
