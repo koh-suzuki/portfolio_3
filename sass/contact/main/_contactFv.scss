@@ -1,6 +1,6 @@
 // レスポンシブ max-width: 768px;
 @include mq-down($breakpoint: md) {
-  .fv__main__img {
+  .contact_main_img {
     width: 578px;
     height: auto;
     img {
