@@ -704,5 +704,35 @@ SP画面
   color: #333333;
 }
 
-/* Contact Page */
+.message__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding-top: 144px;
+}
+
+.ceo__wrapper {
+  width: 770px;
+  background-color: #F0F0F0;
+  padding: 120px 0 90px;
+}
+
+.ceo__inner {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.message__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 420px;
+}
+
+.message__img img {
+  max-width: 100%;
+}
+
+/* font
+-------------------- */
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,33 @@
+.message__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding-top: 144px;
+}
+.ceo__wrapper {
+  width: 770px;
+  background-color: #F0F0F0;
+  padding: 120px 0 90px;
+}
+.ceo__inner {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.message__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 420px;
+  img {
+    max-width: 100%;
+  }
+}
+
+/* font
+-------------------- */
+// .ceo__text {
+//   font-family: Noto Sans JP Bold;
+//   @include f_around(16, 32, false, 0);
+//   color: #333333;
+// }
