@@ -8,3 +8,96 @@
 .contact__form__text {
   margin-bottom: 55px;
 }
+.radio__main__title {
+  display: block;
+  margin-bottom: 20px;
+}
+.radio__item {
+  margin-right: 50px;
+}
+.radio__check {
+  margin-right: 10px;
+}
+.form__controll {
+  margin-top: 45px;
+}
+.form__text,
+.form__textarea {
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #333333;
+}
+.form__text {
+  padding: 8px;
+}
+.form__textarea {
+  padding: 9px;
+  resize: none;
+}
+.privacy__check__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 43px 0 40px;
+}
+.praivacy__lead {
+  border: 1px solid #333333;
+  height: 252px;
+  overflow: scroll;
+  padding: 10px;
+}
+.privacy__check {
+  margin-left: 10px;
+}
+.btn {
+  display: block;
+  width: 160px;
+  margin: 0 auto;
+  background-color: #000000;
+}
+.badge {
+  padding: 3px 5px;
+  margin-left: 10px;
+  background-color: #333333;
+}
+
+/* font
+------------------------- */
+$text__color:#333333;
+.contact__form__text {
+  font-family: Noto Sans JP;
+  @include f_around(16, 24, false, 4);
+  color: $text__color;
+}
+.radio__title {
+  font-family: 游ゴシック体 Medium;
+  @include f_around(16, 16, false, 16);
+  color: $text__color;
+}
+.radio__main__title,
+.form__title {
+  font-family: Noto Sans JP Bold;
+  @include f_around(16, 16, false, 4);
+  color: $text__color;
+}
+.privacy__title {
+  font-family: Montserrat ExtraBold;
+  @include f_around(16, 16, false, 4);
+  
+}
+.form__text,
+.form__textarea {
+  font-family: Noto Sans JP;
+  @include f_around(16, 16, false, 4);
+  color: $text__color;
+}
+.form__btn {
+  font-family: Montserrat Medium;
+  @include f_around(14, 32, bold, 15);
+  color: #FFFFFF;
+}
+.badge {
+  font-family: Noto Sans JP Bold;
+  @include f_around(12, 12, false, 4);
+  color: #FFFFFF;
+}
