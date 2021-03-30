@@ -72,7 +72,7 @@
 
 /* font
 ----------------------------- */ 
-.fv__catch__title {
+.fv__catch__about {
   font-family: 'Montserrat', sans-serif;
   @include f_around(72, 86, Bold, 63);
 }
@@ -83,7 +83,7 @@
 
 // レスポンシブ max-width: 768px;
 @include mq-down($breakpoint: md) {
-  .fv__catch__title {
+  .fv__catch__about {
     font-family: 'Montserrat', sans-serif;
     @include f_around(52, 86, Bold, 63);
   }

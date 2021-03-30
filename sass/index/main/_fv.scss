@@ -8,8 +8,10 @@
   top: 0;
   left: 0;
   width: 78.6%;
+  height: auto;
   img {
     max-width: 100%;
+    object-fit: cover;
   }
 }
 .fv__sub__img {
@@ -29,6 +31,40 @@
   color: #FFFFFF;
 }
 
+/* --------------------------------------
+レスポンシブ max-width: 768px; 
+----------------------------------------*/
+@include mq-down($breakpoint: md) {
+  .fv__main__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: auto;
+    img {
+      max-width: 100%;
+      height: 890px;
+      object-fit: cover;
+    }
+  }
+  .fv__sub__img {
+    width: 562px;
+    height: auto;
+    margin-left: auto;
+    img {
+      max-width: 100%;
+      height: 1024px;
+      object-fit: cover;
+    }
+  }
+  .fv__catch__home {
+    position: absolute;
+    top: 333px;
+    right: 80px;
+    color: #FFFFFF;
+  }
+}
+
 /* font
 ------------------------ */ 
 .fv__text__1 {
@@ -44,4 +80,13 @@
 .fv__catch__title {
   @include f_around(72, 86, Bold, 0);
   font-family: 'Montserrat', sans-serif;
+}
+
+/* --------------------------------------
+レスポンシブ max-width: 768px; 
+----------------------------------------*/
+@include mq-down($breakpoint: md) {
+  .catch__home__title {
+    @include f_around(56, 53, Bold, 63);
+  }
 }

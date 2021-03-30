@@ -37,6 +37,19 @@
   padding: 30px;
 }
 
+/* --------------------------------------
+レスポンシブ max-width: 768px; 
+----------------------------------------*/
+@include mq-down($breakpoint: md) {
+  .about__main__view {
+    position: relative;
+    /* section__wrapper 起点 */ 
+    position: absolute;
+    top: 120px;
+    z-index: 1;
+  }
+}
+
 /* font
 ------------------------- */ 
 .about__title {
