@@ -1,6 +1,6 @@
 .contact__inner {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   align-items: center;
   justify-content: space-between;
   padding: 60px 0 120px;
@@ -16,8 +16,23 @@
     object-fit: cover;
   }
 }
+.contact__title {
+  margin-top: 30px;
+}
 .btn__contact {
   margin-top: 30px;
+}
+
+/* --------------------------------------
+レスポンシブ max-width: 768px; 
+----------------------------------------*/
+@include mq-down($breakpoint: md) {
+  .contact__inner {
+    padding: 40px 0 80px;
+  }
+  .contact__lead {
+    max-width: 510px;
+  }
 }
 
 /* font

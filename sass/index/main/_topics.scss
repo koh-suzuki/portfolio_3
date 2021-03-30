@@ -19,8 +19,16 @@
   border-bottom: #DDDDDD 1px solid;
 }
 .btn__topic {
-  // margin-top: 14px;
   margin-left: auto;
+}
+
+/* --------------------------------------
+レスポンシブ max-width: 768px; 
+----------------------------------------*/
+@include mq-down($breakpoint: md) {
+  .btn__topic {
+    margin: auto 0 0 0;
+  }
 }
 
 /* font
