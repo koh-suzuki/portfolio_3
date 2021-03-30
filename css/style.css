@@ -691,7 +691,6 @@ SP画面
   position: relative;
   padding-bottom: 32.73%;
   padding-top: 30px;
-  margin: 0 30px;
   height: 0;
   overflow: hidden;
 }
@@ -883,8 +882,8 @@ SP画面
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  max-width: 70%;
-  margin-left: 30%;
+  max-width: 800px;
+  margin-left: auto;
 }
 
 .company__title {
@@ -902,6 +901,15 @@ SP画面
 
 .company__map {
   margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .company__wrapper {
+    padding: 80px 0;
+  }
+  .company__list {
+    max-width: 678px;
+  }
 }
 
 /* font
@@ -929,6 +937,18 @@ SP画面
   line-height: 5.875;
   letter-spacing: 0em;
   color: #333333;
+}
+
+/* --------------------------------------
+レスポンシブ max-width: 768px; 
+----------------------------------------*/
+@media screen and (max-width: 768px) {
+  .company__title,
+  .company__text {
+    font-size: 16px;
+    line-height: 3.5;
+    letter-spacing: 0em;
+  }
 }
 
 .contact__form__wrapper {

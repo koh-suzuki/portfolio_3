@@ -11,8 +11,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  max-width: 70%;
-  margin-left: 30%;
+  max-width: 800px;
+  margin-left: auto;
 }
 .company__title {
   width: 30%;
@@ -26,6 +26,16 @@
 }
 .company__map {
   margin-top: 40px;
+}
+
+// レスポンシブ max-width: 768px;
+@include mq-down($breakpoint: md) {
+  .company__wrapper {
+    padding: 80px 0;
+  }
+  .company__list {
+    max-width: 678px;
+  }
 }
 
 /* font
@@ -45,4 +55,15 @@ $company__text__color: #333333;
   font-family: 游ゴシック体;
   @include f_around(16, 94, false, 0);
   color: $company__text__color;
+}
+
+/* --------------------------------------
+レスポンシブ max-width: 768px; 
+----------------------------------------*/
+@include mq-down($breakpoint: md) {
+  .company__title,
+  .company__text {
+    @include f_around(16, 56, false, 0);
+  }
+
 }
