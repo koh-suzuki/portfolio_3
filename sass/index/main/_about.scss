@@ -56,6 +56,18 @@
   }
 }
 
+/* --------------------------------------
+レスポンシブ max-width: 368px; 
+----------------------------------------*/
+@include mq-down($breakpoint: sm) {
+  .about__inner {
+    height: 441px;
+    max-width: 345px;
+    padding: 50px 0;
+
+  }
+}
+
 /* font
 ------------------------- */ 
 .about__title {
