@@ -382,7 +382,7 @@ SP画面
 .fv__wrapper {
   position: relative;
   z-index: 1;
-  height: 740px;
+  height: auto;
 }
 
 .fv__main__img {
@@ -491,6 +491,8 @@ SP画面
 
 .about__wrapper {
   height: 627px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .about__main__view {
@@ -511,14 +513,11 @@ SP画面
   height: 387px;
   background-color: #FFFFFF;
   opacity: .95;
+  padding: 30px;
 }
 
-.about__title {
-  margin-left: 30px;
-}
-
-.btn__about {
-  margin-left: 30px;
+.about__text {
+  padding: 30px 0;
 }
 
 .about__img {
@@ -531,10 +530,6 @@ SP画面
   object-fit: cover;
 }
 
-.about__text {
-  padding: 30px;
-}
-
 /* --------------------------------------
 レスポンシブ max-width: 768px; 
 ----------------------------------------*/
@@ -543,8 +538,20 @@ SP画面
     position: relative;
     /* section__wrapper 起点 */
     position: absolute;
-    top: 120px;
     z-index: 1;
+  }
+  .about__inner {
+    /* .about__main__viewのrelative 起点 */
+    position: absolute;
+    top: 60px;
+    left: 89px;
+    height: 359px;
+  }
+  .about__img {
+    height: auto;
+  }
+  .about__img img {
+    height: 479px;
   }
 }
 
@@ -554,7 +561,7 @@ SP画面
   font-family: Montserrat;
   font-size: 32px;
   font-weight: bold;
-  line-height: 2.9375;
+  line-height: 1;
   letter-spacing: 0.068em;
 }
 
@@ -592,6 +599,18 @@ SP画面
 
 .content__text {
   padding: 30px 0;
+}
+
+/* --------------------------------------
+レスポンシブ max-width: 768px; 
+----------------------------------------*/
+@media screen and (max-width: 768px) {
+  .content__wrapper {
+    padding-top: 20px;
+  }
+  .content__inner {
+    margin: 40px 0;
+  }
 }
 
 /* font

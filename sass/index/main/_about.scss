@@ -1,5 +1,7 @@
 .about__wrapper {
   height: 627px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 .about__main__view {
   position: relative;
@@ -18,12 +20,10 @@
   height: 387px;
   background-color: #FFFFFF;
   opacity: .95;
+  padding: 30px;
 }
-.about__title {
-  margin-left: 30px;
-}
-.btn__about {
-  margin-left: 30px;
+.about__text {
+  padding: 30px 0;
 }
 .about__img {
   max-width: 1100px;
@@ -32,9 +32,6 @@
     width: 100%;
     object-fit: cover;
   }
-}
-.about__text {
-  padding: 30px;
 }
 
 /* --------------------------------------
@@ -45,8 +42,20 @@
     position: relative;
     /* section__wrapper 起点 */ 
     position: absolute;
-    top: 120px;
     z-index: 1;
+  }
+  .about__inner {
+    /* .about__main__viewのrelative 起点 */ 
+    position: absolute;
+    top: 60px;
+    left: 89px;
+    height: 359px;
+  }
+  .about__img {
+    height: auto;
+    img {
+      height: 479px;
+    }
   }
 }
 
@@ -54,7 +63,7 @@
 ------------------------- */ 
 .about__title {
   font-family: Montserrat;
-  @include f_around(32, 94, bold, 68);
+  @include f_around(32, 32, bold, 68);
 }
 .about__text {
   font-family: Noto Sans JP;
