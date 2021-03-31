@@ -1,10 +1,13 @@
+.contact__main__text {
+  font-family: 游ゴシック体;
+  @include f_around(20, 20, bold, 5);
+}
 .contact__position {
   position: absolute;
   top: 156px;
   right: 10.42%;
   color: #FFFFFF;
 }
-
 .contact__sub__img {
   max-width: 780px;
   height: auto;
@@ -15,8 +18,17 @@
   }
 }
 
-// レスポンシブ max-width: 768px;
+
+/* --------------------------------------
+レスポンシブ max-width: 768px; 
+----------------------------------------*/
 @include mq-down($breakpoint: md) {
+  .contact__main__title {
+    @include f_around(52, 76, false, 63);
+  }
+  .contact__main__text {
+    @include f_around(16, 16, false, 5);
+  }
   .contact_main_img {
     width: 578px;
     height: auto;
@@ -25,6 +37,16 @@
       height: 529px;
       object-fit: cover;
       object-position: 47%;
+    }
+  }
+  .contact__sub__img {
+    max-width: 406px;
+    height: auto;
+    margin-left: auto;
+    img {
+      width: 100%;
+      height: 615px;
+      object-fit: cover;
     }
   }
 }

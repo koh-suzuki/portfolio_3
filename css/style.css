@@ -1248,7 +1248,7 @@ SP画面
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 43px 0 40px;
+  margin: 40px 0;
 }
 
 .praivacy__lead {
@@ -1339,6 +1339,29 @@ SP画面
   color: #FFFFFF;
 }
 
+/* --------------------------------------
+レスポンシブ max-width: 768px; 
+----------------------------------------*/
+@media screen and (max-width: 768px) {
+  .contact__form__wrapper {
+    padding: 135px 0 197px;
+  }
+  .contact__form__text {
+    margin-bottom: 20px;
+  }
+  .form__controll {
+    margin-top: 40px;
+  }
+}
+
+.contact__main__text {
+  font-family: 游ゴシック体;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.005em;
+}
+
 .contact__position {
   position: absolute;
   top: 156px;
@@ -1357,7 +1380,20 @@ SP画面
   object-fit: cover;
 }
 
+/* --------------------------------------
+レスポンシブ max-width: 768px; 
+----------------------------------------*/
 @media screen and (max-width: 768px) {
+  .contact__main__title {
+    font-size: 52px;
+    line-height: 1.46154;
+    letter-spacing: 0.063em;
+  }
+  .contact__main__text {
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.005em;
+  }
   .contact_main_img {
     width: 578px;
     height: auto;
@@ -1367,6 +1403,16 @@ SP画面
     height: 529px;
     object-fit: cover;
     object-position: 47%;
+  }
+  .contact__sub__img {
+    max-width: 406px;
+    height: auto;
+    margin-left: auto;
+  }
+  .contact__sub__img img {
+    width: 100%;
+    height: 615px;
+    object-fit: cover;
   }
 }
 /*# sourceMappingURL=style.css.map */

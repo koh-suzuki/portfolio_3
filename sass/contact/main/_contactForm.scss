@@ -38,7 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 43px 0 40px;
+  margin: 40px 0;
 }
 .praivacy__lead {
   border: 1px solid #333333;
@@ -103,4 +103,19 @@ $text__color:#333333;
   font-family: Noto Sans JP Bold;
   @include f_around(12, 12, false, 4);
   color: #FFFFFF;
+}
+
+/* --------------------------------------
+レスポンシブ max-width: 768px; 
+----------------------------------------*/
+@include mq-down($breakpoint: md) {
+  .contact__form__wrapper {
+    padding: 135px 0 197px;
+  }
+  .contact__form__text {
+    margin-bottom: 20px;
+  }
+  .form__controll {
+    margin-top: 40px;
+  }
 }
