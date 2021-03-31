@@ -29,6 +29,7 @@
 }
 .form__text {
   padding: 8px;
+  box-sizing: border-box;
 }
 .form__textarea {
   padding: 9px;
@@ -83,6 +84,9 @@ $text__color:#333333;
   @include f_around(16, 16, false, 4);
   color: $text__color;
 }
+.radio__controll {
+  display: inline;
+}
 .privacy__title {
   font-family: Montserrat ExtraBold;
   @include f_around(16, 16, false, 4);
@@ -117,5 +121,15 @@ $text__color:#333333;
   }
   .form__controll {
     margin-top: 40px;
+  }
+}
+
+/* --------------------------------------
+レスポンシブ max-width: 375px; 
+----------------------------------------*/
+@include mq-down($breakpoint: sm) {
+  .radio__list {
+    display: flex;
+    flex-direction: column;
   }
 }
