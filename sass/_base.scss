@@ -62,9 +62,8 @@ vertical-align: top;
 ----------------------------------------*/
 @include mq-down($breakpoint: sm) {
   .container {
-    box-sizing: border-box;
     max-width: 345px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 15px;
   }
 }

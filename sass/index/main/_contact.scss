@@ -35,6 +35,23 @@
   }
 }
 
+/* --------------------------------------
+レスポンシブ max-width: 375px; 
+----------------------------------------*/
+@include mq-down($breakpoint: sm) {
+  .contact__img {
+    width: 345px;
+    height: auto;
+    img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+  .contact__inner {
+    padding: 40px 0;
+  }
+}
+
 /* font
 ----------------------- */
 .contact__text {

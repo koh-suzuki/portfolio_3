@@ -7,11 +7,8 @@
   margin-bottom: 30px;
 }
 .topic__list {
-  min-width: 700px;
+  max-width: 700px;
   margin-left: auto;
-}
-.topic__day {
-  // padding-top: 16px;
 }
 .topic__text {
   padding: 12px 0 12px;
@@ -28,6 +25,15 @@
 @include mq-down($breakpoint: md) {
   .btn__topic {
     margin: auto 0 0 0;
+  }
+}
+
+/* --------------------------------------
+レスポンシブ max-width: 375px; 
+----------------------------------------*/
+@include mq-down($breakpoint: sm) {
+  .topics__wrapper {
+    padding: 40px 0;
   }
 }
 
