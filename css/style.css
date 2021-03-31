@@ -1233,11 +1233,11 @@ SP画面
   width: 100%;
   margin-top: 10px;
   border: 1px solid #333333;
+  box-sizing: border-box;
 }
 
 .form__text {
   padding: 8px;
-  box-sizing: border-box;
 }
 
 .form__textarea {
