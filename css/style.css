@@ -423,7 +423,7 @@ SP画面
   object-fit: cover;
 }
 
-.fv__catch {
+.fv__catch__home {
   position: absolute;
   top: 22%;
   right: 13.5%;
@@ -510,6 +510,7 @@ SP画面
   font-weight: bold;
   line-height: 0.85;
   letter-spacing: 0em;
+  color: #FFFFFF;
 }
 
 .fv__catch__title {
@@ -518,6 +519,7 @@ SP画面
   line-height: 1.19444;
   letter-spacing: 0em;
   font-family: 'Montserrat', sans-serif;
+  color: #FFFFFF;
 }
 
 /* --------------------------------------
@@ -1335,6 +1337,24 @@ SP画面
   line-height: 1;
   letter-spacing: 0.004em;
   color: #FFFFFF;
+}
+
+.contact__position {
+  position: absolute;
+  top: 156px;
+  right: 10.42%;
+  color: #FFFFFF;
+}
+
+.contact__sub__img {
+  max-width: 780px;
+  height: auto;
+  margin-left: auto;
+}
+
+.contact__sub__img img {
+  width: 100%;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 768px) {

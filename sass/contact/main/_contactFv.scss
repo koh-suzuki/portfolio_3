@@ -1,3 +1,20 @@
+.contact__position {
+  position: absolute;
+  top: 156px;
+  right: 10.42%;
+  color: #FFFFFF;
+}
+
+.contact__sub__img {
+  max-width: 780px;
+  height: auto;
+  margin-left: auto;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
 // レスポンシブ max-width: 768px;
 @include mq-down($breakpoint: md) {
   .contact_main_img {
@@ -10,7 +27,4 @@
       object-position: 47%;
     }
   }
-  // .ab__fv__sub {
-    
-  // }
 }
