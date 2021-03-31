@@ -56,9 +56,6 @@
 レスポンシブ max-width: 368px; 
 ----------------------------------------*/
 @include mq-down($breakpoint: sm) {
-  // .about__main__view {
-  
-  // }
   .about__inner {
     height: auto;
     width: 345px;

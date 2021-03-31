@@ -254,6 +254,18 @@ img {
   }
 }
 
+/* --------------------------------------
+レスポンシブ max-width: 365px; 
+----------------------------------------*/
+@media screen and (max-width: 375px) {
+  .container {
+    box-sizing: border-box;
+    max-width: 345px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
 /* Home Page */
 .header__wrapper {
   position: fixed;
@@ -679,6 +691,31 @@ SP画面
   }
 }
 
+/* --------------------------------------
+レスポンシブ max-width: 365px; 
+----------------------------------------*/
+@media screen and (max-width: 375px) {
+  .content__wrapper {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content__inner {
+    margin: 0;
+  }
+  .culture__mq__sm {
+    margin-top: 40px;
+  }
+  .content__img {
+    width: 345px;
+    height: auto;
+  }
+  .content__img img {
+    max-width: 100%;
+  }
+}
+
 /* font
 ------------------------- */
 .content__inner {
@@ -698,6 +735,22 @@ SP画面
   font-size: 16px;
   line-height: 1;
   letter-spacing: 0em;
+}
+
+/* --------------------------------------
+レスポンシブ max-width: 365px; 
+----------------------------------------*/
+@media screen and (max-width: 375px) {
+  .content__title {
+    font-size: 28px;
+    line-height: 1.21429;
+    letter-spacing: 0.068em;
+  }
+  .content__text {
+    font-size: 16px;
+    line-height: 2.125;
+    letter-spacing: 0em;
+  }
 }
 
 .topics__wrapper {

@@ -34,6 +34,31 @@
   }
 }
 
+/* --------------------------------------
+レスポンシブ max-width: 365px; 
+----------------------------------------*/
+@include mq-down($breakpoint: sm) {
+  .content__wrapper {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content__inner {
+    margin: 0;
+  }
+  .culture__mq__sm {
+    margin-top: 40px;
+  }
+  .content__img {
+    width: 345px;
+    height: auto;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
 /* font
 ------------------------- */
 .content__inner {
@@ -46,5 +71,16 @@
 .content__text {
   font-family: 游ゴシック体;
   @include f_around(16, 16, false, 0);
+}
 
+/* --------------------------------------
+レスポンシブ max-width: 365px; 
+----------------------------------------*/
+@include mq-down($breakpoint: sm) {
+  .content__title {
+    @include f_around(28, 34, false, 68);
+  }
+  .content__text {
+    @include f_around(16, 34, false, 0);
+  }
 }
