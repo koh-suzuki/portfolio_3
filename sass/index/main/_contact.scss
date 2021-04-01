@@ -27,6 +27,14 @@
 レスポンシブ max-width: 768px; 
 ----------------------------------------*/
 @include mq-down($breakpoint: md) {
+  .contact__img {
+    width: 520px;
+    height: auto;
+    img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
   .contact__inner {
     padding: 40px 0 80px;
   }

@@ -1,13 +1,18 @@
 .about__wrapper {
   max-width: 1100px;
   margin: 0 auto;
+  height: 627px;
+  position: relative;
 }
 .about__main__view {
+  position: absolute;
+  top: 120px;
+  z-index: 1;
   background: url(/img/home_img/about-img@2x.png) no-repeat center / cover;
   max-width: 1100px;
   width: 100%;
   height: auto;
-  padding: 60px 0;
+  padding: 110px 50px;
   object-fit: cover;
   display: flex;
   align-items: center;
@@ -18,7 +23,7 @@
   max-width: 590px;
   background-color: #FFFFFF;
   opacity: .95;
-  padding: 40px 30px;
+  padding: 50px 30px;
 }
 .about__text {
   padding: 30px 0;
@@ -38,17 +43,19 @@
 @include mq-down($breakpoint: md) {
   .about__wrapper {
     padding-top: 80px;
+    height: auto;
   }
   .about__main__view {
-    max-width: 100%;
     height: auto;
     position: static;
+    padding: 60px 0;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .about__inner {
     margin: 0;
+    padding: 40px 30px;
   }
 }
 
@@ -73,12 +80,21 @@
 /* font
 ------------------------- */ 
 .about__title {
-  font-family: Montserrat;
+  font-family: Montserrat ExtraBold;
   @include f_around(32, 32, bold, 68);
 }
 .about__text {
   font-family: Noto Sans JP;
   @include f_around(16, 32, false, 0);
+}
+
+/* --------------------------------------
+レスポンシブ max-width: 768px; 
+----------------------------------------*/
+@include mq-down($breakpoint: md) {
+  .about__text {
+    font-family: 游ゴシック体 Medium;
+  }
 }
 
 /* --------------------------------------

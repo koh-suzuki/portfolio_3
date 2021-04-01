@@ -27,10 +27,11 @@
 ----------------------------------------*/
 @include mq-down($breakpoint: md) {
   .content__wrapper {
-    padding-top: 20px;
+    padding-top: 0;
   } 
   .content__inner {
-    margin: 40px 0;
+    margin-bottom: 0;
+    padding: 40px 0;
   }
 }
 
