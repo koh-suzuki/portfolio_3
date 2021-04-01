@@ -26,7 +26,22 @@
 }
 .company__map {
   margin-top: 40px;
+  position: relative;
+  padding-bottom: 32.73%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+} 
+.company__map iframe,
+.company__map object,
+.company__map embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
+
 
 // レスポンシブ max-width: 768px;
 @include mq-down($breakpoint: md) {
@@ -36,7 +51,23 @@
   .company__list {
     max-width: 678px;
   }
+  .company__map {
+    padding-bottom: 24.04%;
+  }
 }
+
+/* --------------------------------------
+レスポンシブ max-width: 375px; 
+----------------------------------------*/
+@include mq-down($breakpoint: sm) {
+  .company__main__title {
+    padding-bottom: 30px;
+  }
+  .company__map {
+    padding-bottom: 136.15%;
+  }
+}
+
 
 /* font
 ----------------------- */ 
@@ -55,4 +86,14 @@ $company__text__color: #333333;
   font-family: 游ゴシック体;
   @include f_around(16, 16, false, 0);
   color: $company__text__color;
+}
+
+
+/* --------------------------------------
+レスポンシブ max-width: 375px; 
+----------------------------------------*/
+@include mq-down($breakpoint: sm) {
+  .company__main__title {
+    @include f_around(32, 32, false, 68);
+  }
 }

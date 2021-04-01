@@ -25,14 +25,6 @@
   }
 }
 
-/* --------------------------------------
-レスポンシブ max-width: 768pxpx; 
-----------------------------------------*/
-@include mq-down($breakpoint: md) {
-  .message__wrapper {
-    padding-bottom: 82px;
-  }
-}
 
 
 /* ---------------------------------
@@ -43,8 +35,13 @@ font
   @include f_around(16, 28, false, 0);
 }
 
-// レスポンシブ max-width: 768px;
+/* --------------------------------------
+レスポンシブ max-width: 768pxpx; 
+----------------------------------------*/
 @include mq-down($breakpoint: md) {
+  .message__wrapper {
+    padding-bottom: 82px;
+  }
   .message__img {
     position: absolute;
     top: 0;
@@ -65,4 +62,44 @@ font
   }
 }
 
+/* --------------------------------------
+レスポンシブ max-width: 375px; 
+----------------------------------------*/
+@include mq-down($breakpoint: sm) {
+  .message__wrapper {
+    position: static;
+    padding-bottom: 80px;
+  }
+  .message__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 340px;
+    height: auto;
+    img {
+      max-width: 100%;
+    }
+  }
+  .ceo__wrapper {
+    padding-bottom: 80px;
+  }
+  .ceo__inner {
+    max-width: 345px;
+  }
+  .ceo__title {
+    text-align: center;
+  }
+  .ceo__text {
+    max-width: 288px;
+    margin: 0 auto
+  }
+
+  /* font */ 
+  .ceo__title {
+    @include f_around(31, 39, false, 68);
+  }
+  .ceo__text {
+    @include f_around(14, 28, false, 0);
+  }
+}
 

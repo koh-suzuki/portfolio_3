@@ -933,7 +933,7 @@ SP画面
 }
 
 /* About Page */
-.about_catch_position {
+.fv__catch__about {
   position: absolute;
   top: 33.64%;
   right: 11.82%;
@@ -964,29 +964,11 @@ SP画面
   margin-top: 5px;
 }
 
-.company__map {
-  position: relative;
-  padding-bottom: 32.73%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-}
-
-.company__map iframe,
-.company__map object,
-.company__map embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 /* ------------------------------------
 レスポンシブ max-width: 768px;
 ------------------------------------- */
 @media screen and (max-width: 768px) {
-  .about_catch_position {
+  .fv__catch__about {
     margin-top: 0;
     top: 35.8%;
     right: 12.8%;
@@ -1010,9 +992,6 @@ SP画面
     height: 615px;
     object-fit: cover;
   }
-  .company__map {
-    padding-bottom: 24.04%;
-  }
 }
 
 /* --------------------------------------
@@ -1022,7 +1001,7 @@ SP画面
   .about_main_img {
     width: 287px;
   }
-  .about_main_img > img {
+  .about_main_img img {
     max-width: 100%;
     height: 387px;
     object-fit: cover;
@@ -1036,7 +1015,7 @@ SP画面
     height: 449px;
     object-fit: cover;
   }
-  .about_position {
+  .fv__catch__about {
     position: absolute;
     top: 149px;
     right: 29px;
@@ -1077,7 +1056,7 @@ SP画面
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
   .fv__catch__about {
     font-family: 'Montserrat ExtraBold';
     font-size: 52px;
@@ -1111,6 +1090,16 @@ SP画面
   .vision__wrapper {
     padding: 80px 0;
     margin-left: 16.95%;
+  }
+  .vision__sub__title {
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .vision__wrapper {
+    padding: 80px 0;
+    margin-left: 0;
   }
   .vision__sub__title {
     margin-bottom: 35px;
@@ -1188,15 +1177,6 @@ SP画面
   max-width: 100%;
 }
 
-/* --------------------------------------
-レスポンシブ max-width: 768pxpx; 
-----------------------------------------*/
-@media screen and (max-width: 768px) {
-  .message__wrapper {
-    padding-bottom: 82px;
-  }
-}
-
 /* ---------------------------------
 font
 ---------------------------------- */
@@ -1207,7 +1187,13 @@ font
   letter-spacing: 0em;
 }
 
+/* --------------------------------------
+レスポンシブ max-width: 768pxpx; 
+----------------------------------------*/
 @media screen and (max-width: 768px) {
+  .message__wrapper {
+    padding-bottom: 82px;
+  }
   .message__img {
     position: absolute;
     top: 0;
@@ -1225,6 +1211,50 @@ font
   .ceo__inner {
     max-width: 415px;
     margin: 0 auto;
+  }
+}
+
+/* --------------------------------------
+レスポンシブ max-width: 375px; 
+----------------------------------------*/
+@media screen and (max-width: 375px) {
+  .message__wrapper {
+    position: static;
+    padding-bottom: 80px;
+  }
+  .message__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 340px;
+    height: auto;
+  }
+  .message__img img {
+    max-width: 100%;
+  }
+  .ceo__wrapper {
+    padding-bottom: 80px;
+  }
+  .ceo__inner {
+    max-width: 345px;
+  }
+  .ceo__title {
+    text-align: center;
+  }
+  .ceo__text {
+    max-width: 288px;
+    margin: 0 auto;
+  }
+  /* font */
+  .ceo__title {
+    font-size: 31px;
+    line-height: 1.25806;
+    letter-spacing: 0.068em;
+  }
+  .ceo__text {
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0em;
   }
 }
 
@@ -1262,6 +1292,21 @@ font
 
 .company__map {
   margin-top: 40px;
+  position: relative;
+  padding-bottom: 32.73%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.company__map iframe,
+.company__map object,
+.company__map embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -1270,6 +1315,21 @@ font
   }
   .company__list {
     max-width: 678px;
+  }
+  .company__map {
+    padding-bottom: 24.04%;
+  }
+}
+
+/* --------------------------------------
+レスポンシブ max-width: 375px; 
+----------------------------------------*/
+@media screen and (max-width: 375px) {
+  .company__main__title {
+    padding-bottom: 30px;
+  }
+  .company__map {
+    padding-bottom: 136.15%;
   }
 }
 
@@ -1298,6 +1358,17 @@ font
   line-height: 1;
   letter-spacing: 0em;
   color: #333333;
+}
+
+/* --------------------------------------
+レスポンシブ max-width: 375px; 
+----------------------------------------*/
+@media screen and (max-width: 375px) {
+  .company__main__title {
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: 0.068em;
+  }
 }
 
 .contact__form__wrapper {

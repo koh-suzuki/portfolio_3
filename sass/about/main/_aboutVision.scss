@@ -21,6 +21,17 @@
   }
 }
 
+// レスポンシブ max-width: 375px;
+@include mq-down($breakpoint: sm) {
+  .vision__wrapper {
+    padding: 80px 0;    
+    margin-left: 0;    
+  }
+  .vision__sub__title {
+    margin-bottom: 35px;  
+  }
+}
+
 
 /* font
 ----------------------------- */ 
