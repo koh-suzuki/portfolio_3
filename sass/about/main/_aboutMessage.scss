@@ -25,6 +25,24 @@
   }
 }
 
+/* --------------------------------------
+レスポンシブ max-width: 768pxpx; 
+----------------------------------------*/
+@include mq-down($breakpoint: md) {
+  .message__wrapper {
+    padding-bottom: 82px;
+  }
+}
+
+
+/* ---------------------------------
+font
+---------------------------------- */ 
+.ceo__text {
+  font-family: Noto Sans JP Bold;
+  @include f_around(16, 28, false, 0);
+}
+
 // レスポンシブ max-width: 768px;
 @include mq-down($breakpoint: md) {
   .message__img {

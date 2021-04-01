@@ -4,7 +4,6 @@
   padding-bottom: 120px;
 }
 .company__main__title {
-  margin-bottom: 20px;
   border-bottom: 1px solid #DDDDDD;
 }
 .company__list {
@@ -23,6 +22,7 @@
 .company__text,
 .company__title {
   border-bottom: 1px solid #DDDDDD;
+  padding: 20px 0;
 }
 .company__map {
   margin-top: 40px;
@@ -31,7 +31,7 @@
 // レスポンシブ max-width: 768px;
 @include mq-down($breakpoint: md) {
   .company__wrapper {
-    padding: 80px 0;
+    padding: 0 0 80px;
   }
   .company__list {
     max-width: 678px;
@@ -48,22 +48,11 @@ $company__text__color: #333333;
 }
 .company__title {
   font-family: 游ゴシック体;
-  @include f_around(16, 94, bold, 0);
+  @include f_around(16, 16, bold, 0);
   color: $company__text__color;
 }
 .company__text {
   font-family: 游ゴシック体;
-  @include f_around(16, 94, false, 0);
+  @include f_around(16, 16, false, 0);
   color: $company__text__color;
-}
-
-/* --------------------------------------
-レスポンシブ max-width: 768px; 
-----------------------------------------*/
-@include mq-down($breakpoint: md) {
-  .company__title,
-  .company__text {
-    @include f_around(16, 56, false, 0);
-  }
-
 }

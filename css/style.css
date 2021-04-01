@@ -741,7 +741,7 @@ SP画面
 }
 
 .content__title {
-  font-family: Montserrat;
+  font-family: Montserrat ExtraBold;
   font-size: 32px;
   font-weight: bold;
   line-height: 1.21875;
@@ -934,7 +934,9 @@ SP画面
 
 /* About Page */
 .about_catch_position {
-  margin-top: 11.46vh;
+  position: absolute;
+  top: 33.64%;
+  right: 11.82%;
 }
 
 .about_main_img {
@@ -980,6 +982,9 @@ SP画面
   height: 100%;
 }
 
+/* ------------------------------------
+レスポンシブ max-width: 768px;
+------------------------------------- */
 @media screen and (max-width: 768px) {
   .about_catch_position {
     margin-top: 0;
@@ -1010,6 +1015,34 @@ SP画面
   }
 }
 
+/* --------------------------------------
+レスポンシブ max-width: 375px; 
+----------------------------------------*/
+@media screen and (max-width: 375px) {
+  .about_main_img {
+    width: 287px;
+  }
+  .about_main_img > img {
+    max-width: 100%;
+    height: 387px;
+    object-fit: cover;
+    object-position: 53%;
+  }
+  .about_sub_img {
+    width: 197px;
+  }
+  .about_sub_img img {
+    max-width: 100%;
+    height: 449px;
+    object-fit: cover;
+  }
+  .about_position {
+    position: absolute;
+    top: 149px;
+    right: 29px;
+  }
+}
+
 /* font
 ----------------------------- */
 .fv__catch__about {
@@ -1025,14 +1058,31 @@ SP画面
   font-size: 20px;
   line-height: 1;
   letter-spacing: 0.005em;
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {
   .fv__catch__about {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat ExtraBold';
     font-size: 52px;
     font-weight: Bold;
     line-height: 1.65385;
+    letter-spacing: 0.063em;
+  }
+  .ab__fv__text {
+    font-family: Noto Sans JP Bold;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.005em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fv__catch__about {
+    font-family: 'Montserrat ExtraBold';
+    font-size: 52px;
+    font-weight: Bold;
+    line-height: 1.36538;
     letter-spacing: 0.063em;
   }
   .ab__fv__text {
@@ -1059,14 +1109,18 @@ SP画面
 
 @media screen and (max-width: 768px) {
   .vision__wrapper {
+    padding: 80px 0;
     margin-left: 16.95%;
+  }
+  .vision__sub__title {
+    margin-bottom: 35px;
   }
 }
 
 /* font
 ----------------------------- */
 .vision__title {
-  font-family: Montserrat;
+  font-family: Montserrat ExtraBold;
   font-size: 32px;
   font-weight: bold;
   line-height: 1;
@@ -1089,6 +1143,19 @@ SP画面
   line-height: 2;
   letter-spacing: 0em;
   color: #333333;
+}
+
+/* --------------------------------------
+レスポンシブ max-width: 768px; 
+----------------------------------------*/
+@media screen and (max-width: 768px) {
+  .vision__sub__title {
+    font-family: Noto Sans JP Bold;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.005em;
+    color: #333333;
+  }
 }
 
 .message__wrapper {
@@ -1121,6 +1188,25 @@ SP画面
   max-width: 100%;
 }
 
+/* --------------------------------------
+レスポンシブ max-width: 768pxpx; 
+----------------------------------------*/
+@media screen and (max-width: 768px) {
+  .message__wrapper {
+    padding-bottom: 82px;
+  }
+}
+
+/* ---------------------------------
+font
+---------------------------------- */
+.ceo__text {
+  font-family: Noto Sans JP Bold;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0em;
+}
+
 @media screen and (max-width: 768px) {
   .message__img {
     position: absolute;
@@ -1149,7 +1235,6 @@ SP画面
 }
 
 .company__main__title {
-  margin-bottom: 20px;
   border-bottom: 1px solid #DDDDDD;
 }
 
@@ -1172,6 +1257,7 @@ SP画面
 .company__text,
 .company__title {
   border-bottom: 1px solid #DDDDDD;
+  padding: 20px 0;
 }
 
 .company__map {
@@ -1180,7 +1266,7 @@ SP画面
 
 @media screen and (max-width: 768px) {
   .company__wrapper {
-    padding: 80px 0;
+    padding: 0 0 80px;
   }
   .company__list {
     max-width: 678px;
@@ -1201,7 +1287,7 @@ SP画面
   font-family: 游ゴシック体;
   font-size: 16px;
   font-weight: bold;
-  line-height: 5.875;
+  line-height: 1;
   letter-spacing: 0em;
   color: #333333;
 }
@@ -1209,21 +1295,9 @@ SP画面
 .company__text {
   font-family: 游ゴシック体;
   font-size: 16px;
-  line-height: 5.875;
+  line-height: 1;
   letter-spacing: 0em;
   color: #333333;
-}
-
-/* --------------------------------------
-レスポンシブ max-width: 768px; 
-----------------------------------------*/
-@media screen and (max-width: 768px) {
-  .company__title,
-  .company__text {
-    font-size: 16px;
-    line-height: 3.5;
-    letter-spacing: 0em;
-  }
 }
 
 .contact__form__wrapper {
