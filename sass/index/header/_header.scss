@@ -1,22 +1,26 @@
 .header__wrapper {
   position: fixed;
   width: 100%;
-  padding: 30px 3vw;
   z-index: 2;
+}
+.header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 30px 3vw;
 }
 .header__logo {
-  width: 260px;
+  // width: 260px;
   height: auto;
   display: flex;
   line-height: 0;
-  img {
-    width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
-  }
+  // img {
+  //   width: 100%;
+  //   object-fit: cover;
+  //   vertical-align: bottom;
+  //   color: #1B1310;
+  // }
+  display: flex;
   >a {
     display: block;
   }
@@ -33,17 +37,19 @@
 .menu__wrapper {
   display: flex;
   align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 4;
 }
 
 /* ハンバーガーメニュー
 --------------------------- */
 .menu {
+  position: relative;
   width: 1.375rem;
   height: 0.625rem;
-  position: relative;
   border:none;
   margin-right: 7px; 
-  z-index: 4;
 }
 .bar{
   width: 100%;
@@ -142,6 +148,17 @@ body.noscroll{
 
 /* font
 ----------------------------------- */
+.site__logo__main,
+.site__logo__inc {
+  font-family: Montserrat ExtraBold;
+  color: #fff;
+}
+.site__logo__main {
+  @include f_around(34, 34, false,5);
+}
+.site__logo__inc {
+  @include f_around(22, 22, false,5);
+}
 .menu__text {
   font-family: Montserrat ExtraBold;
   @include f_around(10, 10, false, 5);

@@ -12,13 +12,32 @@
 </head>
 <body>
   <header class="header__wrapper">
+    <div class="header__inner">
     <h1 class="header__logo">
-      <a href="#">
-        <img src="/img/site-logo@2x.png" alt="メインロゴの画像">
+      <a href="/html/index.html">
+        <!-- <img src="/img/site-logo@2x.png" alt="メインロゴの画像"> -->
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43.009" height="46" viewBox="0 0 43.009 46">
+          <defs>
+            <filter id="前面オブジェクトで型抜き_1" x="0" y="0" width="43.009" height="46" filterUnits="userSpaceOnUse">
+              <feOffset dy="3" input="SourceAlpha"/>
+              <feGaussianBlur stdDeviation="3" result="blur"/>
+              <feFlood flood-opacity="0.161"/>
+              <feComposite operator="in" in2="blur"/>
+              <feComposite in="SourceGraphic"/>
+            </filter>
+          </defs>
+          <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#前面オブジェクトで型抜き_1)">
+            <path id="前面オブジェクトで型抜き_1-2" data-name="前面オブジェクトで型抜き 1" d="M14,35a13.979,13.979,0,0,1-7.215-2h8.848a14.3,14.3,0,0,0,8.847-2.719A14.014,14.014,0,0,1,14,35ZM4.822,31.572h0a14,14,0,0,1,0-21.143V31.572Zm10.54-3.094H10.33V13.722h5.032a8.13,8.13,0,0,1,5.682,1.98,7.153,7.153,0,0,1,2.138,5.4,7.154,7.154,0,0,1-2.138,5.4A8.13,8.13,0,0,1,15.362,28.478Zm9.645-16.127A13.96,13.96,0,0,0,15.634,9.2H6.463a14.02,14.02,0,0,1,13.76-.744,14.136,14.136,0,0,1,4.785,3.894Z" transform="translate(9 -1)" fill="#fff"/>
+          </g>
+        </svg>
+        <span class="site__logo__main">
+          DIGSMILE
+        </span>
+        <span class="site__logo__inc">INC.</span>        
       </a>
     </h1>
+    <!-- //header__logo -->
     <div class="menu__wrapper">
-      <!-- //header__logo -->
       <div class="menu ">
         <span class="bar bar__top"></span>
         <span class="bar bar__mid"></span>
@@ -29,27 +48,28 @@
         MENU
       </p>
       <!-- //menu__text -->
-      <span class="menu__overray"></span>
-      <nav class="header__nav">
-        <div class="header__nav__inner">
-          <div class="header__logo__img">
-            <img src="/img/home_img/グループ 8@2x.png" alt="メインロゴの画像">
-          </div>
-          <!-- //header__logo__img -->
-          <ul class="header__list">
-            <li class="header__item"><a href="#">ABOUT US</a></li>
-            <li class="header__item"><a href="#">WORKS</a></li>
-            <li class="header__item"><a href="#">CULTURE</a></li>
-            <li class="header__item"><a href="#">TOPICS</a></li>
-            <li class="header__item"><a href="#">CONTACT</a></li>
-          </ul>
-          <!-- //header__list -->
-        </div>
-        <!-- //header__nav__inner -->
-      </nav>
-      <!-- //header__nav -->
     </div>
     <!-- //menu__wrapper -->
+    <span class="menu__overray"></span>
+    <nav class="header__nav">
+      <div class="header__nav__inner">
+        <div class="header__logo__img">
+          <img src="/img/home_img/グループ 8@2x.png" alt="メインロゴの画像">
+        </div>
+        <!-- //header__logo__img -->
+        <ul class="header__list">
+          <li class="header__item"><a href="/html/about.html">ABOUT US</a></li>
+          <li class="header__item"><a href="/html/index.html/#works">WORKS</a></li>
+          <li class="header__item"><a href="/html/index.html/#culture">CULTURE</a></li>
+          <li class="header__item"><a href="/html/index.html/#topics">TOPICS</a></li>
+          <li class="header__item"><a href="/html/contact.html">CONTACT</a></li>
+        </ul>
+        <!-- //header__list -->
+      </div>
+      <!-- //header__nav__inner -->
+    </nav>
+    <!-- //header__nav -->
+    </div>
   </header>
   <!-- //header__wrapper -->
   <main class="main">
@@ -96,7 +116,7 @@
       <div class="container">
         <div class="content__wrapper">
           <div class="content__inner">
-            <h3 class="content__title">WORKS</h3>
+            <h3 class="content__title" id="works">WORKS</h3>
             <figure class="content__img">
               <img src="/img/home_img/works-img@2x.png" alt="worksの画像">
             </figure>
@@ -109,7 +129,7 @@
           </div>
           <!-- //content__inner -->
           <div class="content__inner culture__mq__sm">
-            <h3 class="content__title">CULTURE</h3>
+            <h3 class="content__title" id="culture">CULTURE</h3>
             <figure class="content__img">
               <img src="/img/home_img/culture-img@2x.png" alt="cultureの画像">
             </figure>

@@ -269,24 +269,21 @@ img {
 .header__wrapper {
   position: fixed;
   width: 100%;
-  padding: 30px 3vw;
   z-index: 2;
+}
+
+.header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 30px 3vw;
 }
 
 .header__logo {
-  width: 260px;
   height: auto;
   display: flex;
   line-height: 0;
-}
-
-.header__logo img {
-  width: 100%;
-  object-fit: cover;
-  vertical-align: bottom;
+  display: flex;
 }
 
 .header__logo > a {
@@ -308,17 +305,19 @@ img {
 .menu__wrapper {
   display: flex;
   align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 4;
 }
 
 /* ハンバーガーメニュー
 --------------------------- */
 .menu {
+  position: relative;
   width: 1.375rem;
   height: 0.625rem;
-  position: relative;
   border: none;
   margin-right: 7px;
-  z-index: 4;
 }
 
 .bar {
@@ -434,6 +433,24 @@ body.noscroll {
 
 /* font
 ----------------------------------- */
+.site__logo__main,
+.site__logo__inc {
+  font-family: Montserrat ExtraBold;
+  color: #fff;
+}
+
+.site__logo__main {
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: 0.005em;
+}
+
+.site__logo__inc {
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: 0.005em;
+}
+
 .menu__text {
   font-family: Montserrat ExtraBold;
   font-size: 10px;
@@ -476,13 +493,13 @@ body.noscroll {
 }
 
 .fv__sub__img {
-  width: 54.2%;
+  max-width: 54.2%;
   height: 740px;
   margin-left: auto;
 }
 
 .fv__sub__img img {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
