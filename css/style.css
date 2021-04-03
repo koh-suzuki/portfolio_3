@@ -269,7 +269,7 @@ img {
 .header__wrapper {
   position: fixed;
   width: 100%;
-  padding: 30px 0;
+  padding: 30px 3vw;
   z-index: 2;
   display: flex;
   justify-content: space-between;
