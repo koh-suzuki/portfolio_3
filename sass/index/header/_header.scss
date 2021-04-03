@@ -1,23 +1,24 @@
 .header__wrapper {
   position: fixed;
-  z-index: 3;
   width: 100%;
   padding: 30px 0;
-}
-.header__inner {
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1324px;
-  margin: 0 auto;
 }
 .header__logo {
   width: 260px;
   height: auto;
   display: flex;
+  line-height: 0;
   img {
-    max-width: 100%;
+    width: 100%;
     object-fit: cover;
+    vertical-align: bottom;
+  }
+  >a {
+    display: block;
   }
 }
 .fv__text__1 {
@@ -37,13 +38,12 @@
 /* ハンバーガーメニュー
 --------------------------- */
 .menu {
-  // display: none;
   width: 1.375rem;
   height: 0.625rem;
   position: relative;
-  z-index: 3;
   border:none;
   margin-right: 7px; 
+  z-index: 4;
 }
 .bar{
   width: 100%;
@@ -56,13 +56,16 @@
 }
 .bar__top{
   top: 0px;
+  transition: transform .3s;
 }
 .bar__mid{
   top: 50%;
   transform: translate(-50%,-50%);
+  transition: transform .3s;
 }
 .bar__bottom{
   bottom: 0px;
+  transition: transform .3s;
 }
 .menu__text {
   font-size: 0.625rem;
@@ -70,58 +73,72 @@
 }
 /* ハンバーガーメニューの閉じる挙動
 ------------------------------------------- */ 
-.menu.close .bar__top{
-  transform: translate(-50%,10px) rotate(45deg);
+.menu.open .bar__top{
+  transform: translate(-50%,3px) rotate(45deg);
   transition: transform .3s;
 }
-.menu.close .bar__mid{
+.menu.open .bar__mid{
   opacity: 0;
   transition: opacity .3s;
 }
-.menu.close .bar__bottom{
-  transform: translate(-50%,-13px) rotate(-45deg);
+.menu.open .bar__bottom{
+  transform: translate(-50%,-5px) rotate(-45deg);
   transition: transform .3s;
 }
-/* ------------------------------
-SP画面
-------------------------------- */ 
-// @include mq-down(breakpoint: md) {
-//   .header__nav {
-//     display: none;
-//   }
-//   .menu {
-//     display: block;
-//   }
-//   /* ハンバーガーメニューの全画面表示
-//   ------------------------------------------- */
-//   .header__nav{
-//     width: 100vw;
-//     height: 100vh;
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     z-index: 3;
-//   }
-//   .header__list{
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     width: 100%;
-//     height: 100%;
-//     background-color:#1B1310;
-//     z-index: 3;
-//   }
-//   .header__nav.header__list{
-//     display: block;
-//     transform: translate(-50%,-50%);
-//   }
-//   .header__item{
-//     margin-bottom: 40px;
-//   }
-//   body.noscroll{
-//     overflow: hidden;
-//   }
+
+/* ハンバーガーメニューの全画面表示
+------------------------------------------- */
+.menu__overray {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #222222;
+  opacity: 0.6;
+}
+.header__nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -35.3vw;
+  z-index: 3;
+  width: 35.3vw;
+  height: 100vh;
+  background-color:#1B1310;
+}
+.header__nav__inner {
+  padding-top: 180px;
+}
+.header__logo__img {
+  max-width: 41.5px;
+  margin: 0 auto 40px;
+  img {
+    width: 100%;
+  }
+}
+.header__list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+.header__nav.header__list{
+  display: block;
+  transform: translate(-50%,-50%);
+}
+.header__item{
+  margin-bottom: 40px;
+  a {
+    color: #ffff;
+  }
+}
+body.noscroll{
+  overflow: hidden;
+}
 
 /* font
 ----------------------------------- */
