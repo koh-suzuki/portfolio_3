@@ -4,26 +4,24 @@
   z-index: 2;
 }
 .header__inner {
+  padding: 30px 3vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 3vw;
 }
 .header__logo {
-  // width: 260px;
   height: auto;
   display: flex;
+  align-items: center;
   line-height: 0;
-  // img {
-  //   width: 100%;
-  //   object-fit: cover;
-  //   vertical-align: bottom;
-  //   color: #1B1310;
-  // }
-  display: flex;
   >a {
     display: block;
+    display: flex;
+    align-items: center;
   }
+}
+.mein__logo__img {
+  vertical-align: bottom;
 }
 .fv__text__1 {
   margin-bottom: 8px;

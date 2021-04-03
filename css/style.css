@@ -273,21 +273,27 @@ img {
 }
 
 .header__inner {
+  padding: 30px 3vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 3vw;
 }
 
 .header__logo {
   height: auto;
   display: flex;
+  align-items: center;
   line-height: 0;
-  display: flex;
 }
 
 .header__logo > a {
   display: block;
+  display: flex;
+  align-items: center;
+}
+
+.mein__logo__img {
+  vertical-align: bottom;
 }
 
 .fv__text__1 {
